@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-eqiv="X-VA-compatible" content="IE=Rdge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>instagram page</title>
+<link rel="stylesheet" href="linkbutton.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+<style>
+
+  
+</style>
+</head>
+<body>
+       <label for="war" >username </label>
+      <input id="world" type="text" /><br><br>
+	  <label for="war1" >password </label>
+      <input id="world1" type="text" /><br><br>
+	  <button onclick='myfun()'>submit</button>
+	  
+       <!-- <button id='add'>answer</button> -->
+      
+	     <table border='all'>
+		      <tr>
+			      <th>username</th>
+			      <th>password</th>
+			  </tr>
+			  <tr>
+			  <td id='first'></td>
+			  <td id='second'></td>
+			  </tr>
+		 </table>
+	  
+<script>
+      let s=[]; let d=[];
+
+          function myfun(){
+	      
+	        let a=document.getElementById("world").value;
+			let b=document.getElementById("world1").value;
+               s.push(a);  d.push(b);
+			   
+			   for(i=0; i<s.length; i++){
+			           document.getElementById("first").innerHTML=s[i];
+	                  document.getElementById("second").innerHTML=d[i];
+			   }
+	   }
+
+
+
+	   
+	   
+</script>
+</body>
+</html> 
